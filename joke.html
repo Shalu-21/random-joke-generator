@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Joke Generator</title>
+  <link rel="stylesheet" type="text/css" href="joke.css">
+  
+</head>
+<body>
+  <header>
+    <h1>Random Joke Generator</h1>
+  </header>
+  <div class="tech-slideshow">
+    <div class="mover-1"></div>
+    <div class="mover-2"></div>
+  </div>
+
+  <section id="jokeSection">
+    <video autoplay loop muted plays-inline class="background-clip">
+      <source src="video.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+      <label for="category">Select a Category:</label>
+      <select id="category" name="category" >
+        <option value="Any">Any</option>
+        <option value="Miscellaneous">Miscellaneous</option>
+        <option value="Programming">Programming</option>
+        <option value="Pun">Pun</option>
+      </select>
+    </div>
+    <button id="getJokeButton">Get Joke</button>
+    <div id="jokeContainer">
+      <p id="jokeCategory"></p>
+      <p id="joke"></p>
+    </div>
+  </section>
+
+
+  <script src="joke.js"></script>
+</body>
+</html>
